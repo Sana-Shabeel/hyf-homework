@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  width: 90%;
+  height: 100vh;
+  box-shadow: 0px 4px 389px 50px rgba(172, 149, 149, 0.14);
+  margin: auto;
+  background: linear-gradient(90deg, rgba(9,4,93,1) 0%, rgba(87,148,17,1) 35%, rgba(21,117,136,1) 100%);
+
+}
+h2,
+h1,
+h3,
+h4 {
+  font-family: "Scheherazade New", serif;
+}
+
+aside {
+  background-color: #1c5715;
+  height: auto;
+  color: rgb(240, 222, 222) ;
+}
+aside img {
+  width: 200px;
+  height: 200px;
+  /* border-radius: 50%;
+    border: 2px solid currentColor; */
+  border-radius: 30% 70% 64% 36% / 30% 30% 70% 70%;
+  margin: 20px auto;
+  display: block;
+  background-color: rgb(243, 192, 192);
+
+}
+.summary{
+  text-align: center;
+  margin-bottom: 15px;
+}
+h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+.intro p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+fieldset{
+  margin: 20px 10px;
+  height: 200px;
+  
+}
+legend{
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+address {
+  margin-top: 20px;
+  line-height: 27px;
+  font-style: normal;
+  text-align: center;
+}
+address h3 {
+  /* text-align: center; */
+  font-style: normal;
+}
+address a {
+  color: rgb(226, 230, 231);
+  text-decoration: none;
+}
+address a:hover {
+  text-decoration: underline;
+  color: rgb(47, 47, 204);
+}
+
+/* skills */
+
+.skills > h2 {
+  text-align: center;
+}
+.skills h4 {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+.container-html, .container-css, .container-javascript{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.html-bar,
+.css-bar,
+.javascript-bar {
+  width: 300px;
+  height: 20px;
+  background: rgb(255, 255, 255);
+  position: relative;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+.html-bar::before {
+  content: "";
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  background: rgba(101, 5, 226, 0.6);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.css-bar::before {
+  content: "";
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  background: rgba(101, 5, 226, 0.6);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.javascript-bar::before {
+  content: "";
+  width: 1%;
+  height: 100%;
+  position: absolute;
+  background: rgba(101, 5, 226, 0.6);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+/* the main side */
+
+
+.work-history,
+.academic,
+.work-refre,
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #ffb085;
+  margin-top: 20px;
+}
+
+.work-history > span {
+  background: #90aacb;
+  line-height: 2;
+  width: 10%;
+  text-align: center;
+}
+.academic > span {
+  background: #90aacb;
+  line-height: 2;
+  width: 10%;
+  text-align: center;
+}
+.work-refre > span {
+  background: #90aacb;
+  line-height: 2;
+  width: 10%;
+  text-align: center;
+}
+.profile > span {
+  background: #90aacb;
+  line-height: 2;
+  width: 10%;
+  text-align: center;
+}
+
+.work-history > h2 {
+  background: #ffb085;
+}
+
+ul{
+  margin-left: 50px;
+}
+main h3 {
+  margin-left: 10px;
+}
+.who{
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+details{
+  margin: 10px 30px;
+}
