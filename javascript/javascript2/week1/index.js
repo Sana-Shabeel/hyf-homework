@@ -71,6 +71,8 @@ function spiritAnimal() {
     message.innerHTML = `${userInput.value} - ${spiritAnimalArray[random]}`;
   }
 }
+const firstBtn = document.querySelector("#firstBtn");
+firstBtn.addEventListener("click", spiritAnimal, { once: true });
 
 function newSpiritAnimal() {
   return spiritAnimal();
@@ -95,5 +97,3 @@ function renderProducts() {
     title.style.paddingBottom = "20px";
   }
 }
-
-renderProducts();
