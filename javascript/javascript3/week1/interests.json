@@ -1,0 +1,9 @@
+{
+  "firstName": "Anas",
+  "lastName": "barre",
+  "age": 20,
+  "male": true,
+  "interest": ["eating", "breathing", "football", "Real Madrid"],
+  "pets": "absolutely love CATS",
+  "coffe": false
+}
