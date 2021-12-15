@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css
+    "
+    />
+
+    <link rel="stylesheet" href="weather.css" />
+    <link rel="icon" type="image/png" href="images/sun-image.png" />
+
+    <title>Weather app</title>
+  </head>
+  <body>
+    <main>
+      <div class="timer-container">
+        <h1 id="time">12:30 <span id="am-pm">PM</span></h1>
+        <div id="date">
+          <p>Monday, 13 December</p>
+        </div>
+        <div class="current-weather"></div>
+        <div class="weather-container hidden">
+          <div class="weather">
+            <p>Humidity</p>
+            <p id="humidity">50%</p>
+          </div>
+          <div class="weather">
+            <p>Pressure</p>
+            <p id="pressure">1007hPa</p>
+          </div>
+          <div class="weather">
+            <p>Wind Speed</p>
+            <p id="wind">5.6 m/s</p>
+          </div>
+        </div>
+        <form id="form">
+          <input type="text" placeholder="City name" id="input" name="query" />
+          <button class="search">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <button class="location">Current location</button>
+      </div>
+    </main>
+    <a href="giphy.html" class="giphy-btn">To Gif App</a>
+    <script src="weather.js"></script>
+  </body>
+</html>
