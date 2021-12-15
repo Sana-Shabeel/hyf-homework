@@ -56,6 +56,14 @@ ul {
 h3 {
   color: rgb(255, 238, 0);
 }
+.BayHelpers {
+  width: 15rem;
+  height: 5rem;
+  text-align: center;
+  font-family: "Press Start 2P", sans-serif;
+  position: relative;
+  left: 40%;
+}
 
 /* FOR SMALLER SCREENS */
 @media only screen and (max-width: 600px) {
