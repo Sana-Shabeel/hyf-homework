@@ -23,7 +23,7 @@ fetch(
 // 3 When you have written the promise, use it with async/await
 async function resolvedFn(resolveAfter) {
   await new Promise((resolve, reject) => {
-    setTimeout(() => resolve(), resolveAfter + "000" - 0); // am turning the arg into a string with three 0s and removing 0 to turn it back into a type number. Uncaught SyntaxError: Octal literals are not allowed in strict mode.
+    setTimeout(() => resolve(), resolveAfter * 1000);
   });
 }
 resolvedFn(8).then(() => {
