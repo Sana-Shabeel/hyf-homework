@@ -1,3 +1,5 @@
+CREATE DATABASE dc;
+
 USE dc;
 
 CREATE TABLE super_hero(
