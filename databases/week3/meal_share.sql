@@ -12,7 +12,7 @@ CREATE TABLE `meal` (
  `price` DECIMAL(10,2) NOT NULL,
  `created` DATE NOT NULL, 
  PRIMARY KEY(`id`)
-)
+);
 
 DESCRIBE  meal;
 
@@ -26,7 +26,7 @@ CREATE TABLE `reservations` (
     `contact_email` VARCHAR(255) NOT NULL,
     PRIMARY KEY (`id`),
     CONSTRAINT `reservation_meal` FOREIGN KEY (`meal_id`) REFERENCES `meal` (`id`) ON DELETE CASCADE
-)
+);
 
 DESCRIBE reservations;
 
@@ -39,7 +39,7 @@ CREATE TABLE `review`(
     created_date DATE NOT NULL,
     PRIMARY KEY (`id`),
     CONSTRAINT `review_meal` FOREIGN KEY (`meal_id`) REFERENCES `meal` (`id`) ON DELETE CASCADE
-)
+);
 
 DESCRIBE review;
 

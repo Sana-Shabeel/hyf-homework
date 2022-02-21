@@ -4,9 +4,9 @@ USE meal_share_db;
 SELECT * FROM meal WHERE price < 90; 
 
 -- Get meals that still has available reservations
-SELECT meal.title, meal.description, meal.max_reservation 
+SELECT meal.title, meal.description, COALESCE(meal.max_reservation )
 FROM meal  JOIN reservations ON meal.id = reservations.meal_id 
-WHERE max_reservation > number_of_guests;
+;
 
 -- Get meals that partially match a title
 SELECT * 
