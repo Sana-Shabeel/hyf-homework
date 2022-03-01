@@ -10,14 +10,14 @@ class Circle {
     return this.radius * 2;
   }
   getCircumference() {
-    return this.radius * 2 * Math.PI;
+    return Math.round(this.radius * 2 * Math.PI);
   }
   getArea() {
-    return Math.PI * this.radius ** 2;
+    return Math.round(Math.pow(this.radius, 2) * Math.PI);
   }
 }
 
-const circle = new Circle(30);
+const circle = new Circle(50);
 console.log(circle.getDiameter());
 console.log(circle.getCircumference());
 console.log(circle.getArea());
