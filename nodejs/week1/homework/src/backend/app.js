@@ -9,7 +9,7 @@ const reviews = require("./data/reviews");
 //  meals with reviews
 meals.forEach((meal, idx) => {
   const review = reviews.filter((res) => res.mealId === meal.id);
-  meal.review = review;
+  meal.reviews = review;
 });
 
 // to aviod repeating
