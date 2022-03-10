@@ -2,13 +2,9 @@
 // the code might look a bit reptetive in all the controllers but i couldn't come up with a better solution to deal with.
 
 const add = (req, res) => {
-  console.log("body", req.body);
-  console.log("query", req.query);
-  console.log("firstParam" in req.query ? true : false);
   const { firstParam, secondParam } =
     "firstParam" in req.query ? req.query : req.body;
 
-  console.log(firstParam, secondParam);
   const first = Array.isArray(firstParam)
     ? firstParam.map(Number).reduce((a, b) => a + b, 0)
     : Number(firstParam);
