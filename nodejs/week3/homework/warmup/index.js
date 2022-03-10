@@ -8,6 +8,7 @@ const multiplication = require("./controllers/multiplicationController");
 const subtraction = require("./controllers/subtractionController");
 const division = require("./controllers/divisionController");
 
+// routes
 app.get("/", (req, res) => res.send("nodejs week3 homework"));
 app.get("/calculator/add", addition);
 app.get("/calculator/multiply", multiplication);

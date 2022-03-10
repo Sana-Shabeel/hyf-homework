@@ -13,7 +13,7 @@ const division = (req, res) => {
     return res.status(400).json({
       Status: "failed",
       message: {
-        "expected route to look like":
+        "Expected route to look like":
           "calculator/subtract?firstParam=2&secondParam=2",
       },
     });

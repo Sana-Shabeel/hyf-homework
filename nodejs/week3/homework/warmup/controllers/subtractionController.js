@@ -2,8 +2,6 @@ const subtraction = (req, res) => {
   const { firstParam, secondParam } =
     "firstParam" in req.query ? req.query : req.body;
 
-  // get first and second in one array
-
   const allNums = [];
   allNums.push(firstParam, secondParam);
   const result = allNums

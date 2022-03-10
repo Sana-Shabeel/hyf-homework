@@ -9,7 +9,7 @@
     "dev": "nodemon index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "A",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^1.19.1"
