@@ -1,0 +1,22 @@
+.table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  box-shadow: 5px 5px 15px 5px rgba(148, 98, 139, 0.41);
+}
+.table thead tr {
+  background-color: #009879;
+  text-align: left;
+  font-weight: 900;
+}
+.table th,
+.table td {
+  padding: 12px 15px;
+}
+.table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+.table tbody tr:nth-of-type(odd) {
+  background-color: rgba(151, 136, 136, 0.2);
+}
