@@ -9,9 +9,4 @@ react/.DS_Store
 javascript/.DS_Store
  .gitignore
 .vscode/
-README.md
-databases/
-git/
-html-css/
-javascript/
-nodejs/
+

@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(107, 86, 86);
+    padding: 0 1rem;
+}
+.logo img{
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+}
+.burger-menu{
+    width: 2rem;
+    height: .3rem;
+    background: #000;
+    position: relative;
+}
+.burger-menu::after{
+    content: " ";
+    width: 2rem;
+    height: .3rem;
+    background: #000;
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 0;
+}
+
+.burger-menu::before{
+    content: " ";
+    width: 2rem;
+    height: .3rem;
+    background: #000;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+nav{
+    display: none;
+}
+main{
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+}
+.about-section{
+    width: 100%;
+    padding: 1.4rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-size: 2rem;
+}
+h1 > span{
+    color: rgb(126, 49, 49);
+    font-style: italic;
+}
+.about-section p{
+    margin-top: 14px;
+    font-size: 1.1rem;
+}
+
+.status{
+    width: 100%;
+    padding-left: 1rem;
+}
+.status-bar h3{
+    margin-top: 10px;
+}
+.bar{
+    width: 90%;
+    height: 2.5rem;
+    border: 1px solid ;
+    position: relative;
+}
+.bar::before{
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 2.5rem;
+    background: rgb(182, 99, 99);
+    animation-name: progress;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 20s;
+}
+@keyframes progress{
+    from{
+        width: 0;
+        background: rgb(110, 67, 67);
+    }
+    to{
+        width: 7%;
+        background: rgb(110, 67, 67);
+    }
+}
+
+
+/* form */
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+.name__first,.name__last, .location__address, .country, .location__post-code{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 1.4rem;
+    margin: 10px 0 0 10px;
+}
+
+.name__first input, .name__last input, .location__address input, .location__post-code input{
+    width: 70%;
+    height: 2.2rem;
+    margin-left: 10px;
+}
+.country select{
+    width: 37%;
+    height: 2.2rem;
+    margin-left: 10px;
+}
+.profile-description{
+    width: 100%;
+    margin-top: 10px;
+}
+.profile-description p{
+    padding: 10px;
+    font-style: italic;
+}
+textarea{
+    width: 90%;
+    margin:10px 0 0 10px;
+}
+/* input[type="checkbox"]{
+    display: ;
+} */
+
+.shipping{
+    margin: 1rem 0 1rem 10px ;
+    display: flex;
+    flex-direction: column;
+}
+.checkbox{
+    display: flex;
+    gap: 10px;
+}
+.checkbox input{
+    width: 2rem;
+    height: 2rem;
+    margin-top: 10px;
+}
+button{
+    padding: 10px 20px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.next a{
+    position: relative;
+    left: 70%;
+    padding: 1rem 1.7rem;
+    background: rgb(219, 182, 182);
+    text-decoration: none;
+    color: rgb(2, 2, 2);
+}
+
+@media only screen and (min-width: 768px) {
+    .burger-menu{
+        display: none;
+    }
+    nav{
+        display: flex;
+        gap: 1rem;
+    }
+    nav a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    .name{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 1rem 0;
+    }
+    select{
+        width: 50%;
+    }
+    .location{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 1rem 0;
+    }
+}
+
