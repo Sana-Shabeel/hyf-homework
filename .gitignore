@@ -7,3 +7,12 @@ html-css/.DS_Store
 nodejs/.DS_Store
 react/.DS_Store
 javascript/.DS_Store
+ .gitignore
+.vscode/
+README.md
+databases/
+git/
+html-css/
+javascript/
+nodejs/
+react/
