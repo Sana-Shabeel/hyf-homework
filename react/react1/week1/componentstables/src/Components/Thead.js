@@ -1,4 +1,4 @@
-function Thead(props) {
+function Thead() {
   return (
     <thead>
       <tr>

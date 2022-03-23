@@ -11,7 +11,7 @@ function Table(props) {
   return (
     <div>
       <table className="table">
-        <Thead></Thead>
+        <Thead />
         {tbody}
       </table>
     </div>
