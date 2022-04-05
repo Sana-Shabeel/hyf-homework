@@ -1,0 +1,31 @@
+form {
+  max-width: 50%;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+  background: rgb(243, 232, 232);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+input {
+  padding: 1rem 7rem;
+  outline: none;
+}
+.submit-shift {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+button {
+  padding: 10px 20px;
+}
+.form-action {
+  display: flex;
+  gap: 10px;
+}
