@@ -20,6 +20,7 @@ function App() {
       setTodos((prev) => [...prev, ...data]);
     });
   };
+
   const getTodo = (todo) => {
     const newId = todos.length + 1;
     todo.forEach((todo) => (todo.id = newId));
