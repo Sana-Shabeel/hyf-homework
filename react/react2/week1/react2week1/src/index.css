@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  font-family: -apple-system, "Heebo", sans-serif, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #000;
+}
+@media only screen and (max-width: 500px) {
+  body {
+    width: 100vw;
+  }
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
