@@ -10,3 +10,4 @@ javascript/.DS_Store
  .gitignore
 .vscode/
 
+node_modules
